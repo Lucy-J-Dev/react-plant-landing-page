@@ -1,9 +1,5 @@
-import React from 'react'
-
 const App = () => {
-  return (
-    <div>App</div>
-  )
-}
+  return <h1 className="text-4xl font-bold text-rose-600">Hello Tailwind CSS !!!</h1>;
+};
 
-export default App
+export default App;
