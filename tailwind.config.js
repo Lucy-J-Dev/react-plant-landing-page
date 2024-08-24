@@ -12,6 +12,10 @@ export default {
       xl: "1180px"
     },
     extend: {},
+    fontFamily: {
+      Jost: ["Jost", "sans-serif"],
+      Lobster: ["Lobster", "sans-serif"]
+    },
     container: {
       center: true,
       padding: {
