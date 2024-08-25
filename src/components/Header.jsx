@@ -39,7 +39,7 @@ const Header = () => {
         >
           <ul className="flex flex-col items-center gap-8 lg:flex-row">
             <li>
-              <a href="#home" className="nav-link" onClick={handleShowMenu}>
+              <a href="#home" className="nav-link active" onClick={handleShowMenu}>
                 Home
               </a>
             </li>
@@ -88,3 +88,5 @@ const Header = () => {
 };
 
 export default Header;
+
+// TODO: Actualizar la clase active del header para saber en que seccion se encuentra
