@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Popular from "./components/Popular";
 import Review from "./components/Review";
 import Services from "./components/Services";
+import ScrollUpButton from "./components/ScrollUpButton";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Popular />
         <Review />
         <Footer />
+        <ScrollUpButton />
       </main>
     </>
   );
