@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
 import { RiCloseLargeLine, RiMenu4Fill } from "react-icons/ri";
-import HojaUno from "../assets/img/leaf-1.png";
-import HojaDos from "../assets/img/leaf-2.png";
+import Leaf1 from "../assets/img/leaf-1.png";
+import Leaf2 from "../assets/img/leaf-2.png";
 
-const Header = () => {
+const Header = ({menuLinks}) => {
+
+  console.log(menuLinks);
+  
   const [showMenu, setShowMenu] = useState(false);
   const [modifyHeader, setModifyHeader] = useState(true);
 
@@ -38,38 +41,29 @@ const Header = () => {
           className={`absolute top-0 ${showMenuStyle} min-h-[80vh] w-full bg-green-950/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto`}
         >
           <ul className="flex flex-col items-center gap-8 lg:flex-row">
-            <li>
-              <a href="#home" className="nav-link active" onClick={handleShowMenu}>
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#about" className="nav-link" onClick={handleShowMenu}>
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#popular" className="nav-link" onClick={handleShowMenu}>
-                Popular
-              </a>
-            </li>
-            <li>
-              <a href="#review" className="nav-link" onClick={handleShowMenu}>
-                Review
-              </a>
-            </li>
+            {menuLinks.map((menu) => (
+              <li key={menu.id}>
+                <a
+                  href={`#${menu.reference}`}
+                  className={`nav-link ${menu.active ? "active" : ""}`}
+                  onClick={handleShowMenu}
+                >
+                  {menu.name}
+                </a>
+              </li>
+            ))}
           </ul>
 
           <div className="absolute bottom-0 -right-10 opacity-90 lg:hidden">
             <img
-              src={HojaUno}
+              src={Leaf1}
               alt="imagen de una hoja de planta"
               className="w-32"
             />
           </div>
           <div className="absolute -top-5 -left-5 rotate-90 opacity-90 lg:hidden">
             <img
-              src={HojaDos}
+              src={Leaf2}
               alt="imagen de una hoja de planta"
               className="w-32"
             />

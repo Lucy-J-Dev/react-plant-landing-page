@@ -8,9 +8,16 @@ import Services from "./components/Services";
 import ScrollUpButton from "./components/ScrollUpButton";
 
 const App = () => {
+  const menuLinks = [
+    { id: 1, name: "Home", reference: 'home', active: true },
+    { id: 2, name: "About", reference: 'about', active: false },
+    { id: 3, name: "Popular", reference: 'popular', active: false },
+    { id: 4, name: "Review", reference: 'review', active: false },
+  ];
+
   return (
     <>
-      <Header />
+      <Header menuLinks={menuLinks} />
       <main>
         <Home />
         <Services />
