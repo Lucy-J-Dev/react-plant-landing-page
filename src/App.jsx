@@ -1,6 +1,7 @@
 import About from "./components/About";
 import Header from "./components/Header";
 import Home from "./components/Home";
+import Popular from "./components/Popular";
 import Services from "./components/Services";
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
         <Home />
         <Services />
         <About />
+        <Popular />
       </main>
     </>
   );
