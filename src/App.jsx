@@ -5,7 +5,7 @@ import Home from "./components/Home";
 import Popular from "./components/Popular";
 import Review from "./components/Review";
 import Services from "./components/Services";
-import ScrollUpButton from "./components/ScrollUpButton";
+import ScrollUpButton from "./components/common/ScrollUpButton";
 
 const App = () => {
   const menuLinks = [

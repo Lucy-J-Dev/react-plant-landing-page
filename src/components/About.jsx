@@ -1,17 +1,23 @@
 import PlantOneImage from "../assets/img/plant-1.png";
 import PlantTwoImage from "../assets/img/plant-2.png";
 import LeafThreeImage from "../assets/img/leaf-3.png";
+import SectionHeader from "./common/SectionHeader";
 
 const About = () => {
   return (
     <section id="about" className="relative overflow-hidden">
       <div className="absolute -top-8 -right-12 opacity-50">
-        <img src={LeafThreeImage} alt="Imagen de hojas" className="w-40 md:w-52 xl:w-64"/>
+        <img
+          src={LeafThreeImage}
+          alt="Imagen de hojas"
+          className="w-40 md:w-52 xl:w-64"
+        />
       </div>
-      <div className="flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
-        <h2 className="title">About Us</h2>
-        <p className="max-w-2xl">Follow instruction for more</p>
-      </div>
+
+      <SectionHeader
+        title={"About Us"}
+        description={"Follow instruction for more"}
+      />
 
       <div className="container space-y-10 xl:space-y-0">
         {/* item 1 */}

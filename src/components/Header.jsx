@@ -1,12 +1,12 @@
+/* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
 import { RiCloseLargeLine, RiMenu4Fill } from "react-icons/ri";
 import Leaf1 from "../assets/img/leaf-1.png";
 import Leaf2 from "../assets/img/leaf-2.png";
 
-const Header = ({menuLinks}) => {
-
+const Header = ({ menuLinks }) => {
   console.log(menuLinks);
-  
+
   const [showMenu, setShowMenu] = useState(false);
   const [modifyHeader, setModifyHeader] = useState(true);
 

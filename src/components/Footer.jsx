@@ -1,4 +1,4 @@
-import Floral1 from '../assets/img/floral-1.png'
+import Floral1 from "../assets/img/floral-1.png";
 import {
   RiFacebookFill,
   RiInstagramLine,
@@ -14,8 +14,11 @@ const Footer = () => {
       {/* newsletter */}
       <div className="container text-white absolute top-0 right-0 left-0 -translate-y-1/2">
         <div className="bg-green-900 px-10 pt-5 pb-10 space-y-5 rounded-md">
-          <h3>
-            <span className="text-yellow-500">Subscribe</span> to our newslatter
+          <div>
+            <div className="text-2xl mb-2">
+              <span className="text-yellow-500">Subscribe</span> to our
+              newslatter
+            </div>
             <div className="flex flex-col md:flex-row gap-1">
               <input
                 type="email"
@@ -27,7 +30,7 @@ const Footer = () => {
                 <RiSendPlane2Fill />
               </button>
             </div>
-          </h3>
+          </div>
         </div>
       </div>
 
@@ -98,8 +101,12 @@ const Footer = () => {
       </div>
 
       {/* floral image */}
-      <div className='absolute bottom-0 left-0 opacity-20 pointer-events-none'>
-        <img src={Floral1} alt="Imagen floral de fondo" className='w-full lg:w-1/2' />
+      <div className="absolute bottom-0 left-0 opacity-20 pointer-events-none">
+        <img
+          src={Floral1}
+          alt="Imagen floral de fondo"
+          className="w-full lg:w-1/2"
+        />
       </div>
     </footer>
   );

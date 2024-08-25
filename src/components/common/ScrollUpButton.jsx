@@ -4,7 +4,7 @@ import { RiArrowUpLine } from "react-icons/ri";
 const ScrollUpButton = () => {
   const [showScrollButton, setShowScrollButton] = useState(false);
 
-  let showScrollButtonStyle = showScrollButton ? 'bottom-4' : '-bottom-1/2';
+  let showScrollButtonStyle = showScrollButton ? "bottom-4" : "-bottom-1/2";
 
   useEffect(() => {
     const scrollHandler = () => {
@@ -16,8 +16,8 @@ const ScrollUpButton = () => {
     scrollHandler();
 
     return () => {
-        window.removeEventListener('scroll', scrollHandler);
-    }
+      window.removeEventListener("scroll", scrollHandler);
+    };
   }, []);
 
   return (

@@ -9,11 +9,9 @@ const Home = () => {
       <div className="container">
         {/* Interesante para hacer diseños blur en la pantalla */}
         {/* blob 1 */}
-        <div className="w-64 h-64 bg-green-700 rounded-full blur-3xl -z-10 opacity-40 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-        </div>
+        <div className="w-64 h-64 bg-green-700 rounded-full blur-3xl -z-10 opacity-40 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
         {/* blob 1 */}
-        <div className="w-64 h-64 bg-green-700 rounded-full blur-3xl -z-10 opacity-40 absolute right-0 bottom-0">
-        </div>
+        <div className="w-64 h-64 bg-green-700 rounded-full blur-3xl -z-10 opacity-40 absolute right-0 bottom-0"></div>
         <div className="flex flex-col items-center gap-5 lg:flex-row">
           {/* content */}
           <div className="w-full space-y-5 lg:w-1/2">
