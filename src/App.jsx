@@ -32,3 +32,5 @@ const App = () => {
 };
 
 export default App;
+
+// TODO: implementar animaciones y carusel con reviews

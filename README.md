@@ -47,7 +47,11 @@ export default function App() {
 
 
 ## Enseñanzas del proyecto.
-- Instalar Tailwind CSS en un proyecto generado con Vite. Se crea un mini tutorial para realizar esta tarea.
-- El proyecto original usa solamente HTML, CSS y Javascript, este proyecto se modificará para usar ReactJs.
-- Tiene manejo avanzado de Tailwind lo que permite aprender nuevas cosas
-- A traves del código se pusieron etiquetas con la palabra "interesante" para resaltar algun manejo avanzado o punto a tener en cuenta en diseños de paginas web.
+- 🛠 Instalar Tailwind CSS en un proyecto generado con Vite. Se crea un mini tutorial para realizar esta tarea.
+- 💪 El proyecto original usa solamente HTML, CSS y Javascript, este proyecto se modificará para usar ReactJs.
+- 🤓 Tiene manejo avanzado de Tailwind lo que permite aprender nuevas cosas
+- 🧐 A traves del código se pusieron etiquetas con la palabra "interesante" para resaltar algun manejo avanzado o punto a tener en cuenta en diseños de paginas web.
+- 💪 Al implementar el tutorial en ReactJs, se crear componentes reutilzables y se hace uso de estados y hooks para manipular algunas acciones como el scroll y mostrar y ocultar el menu en vistas de dispositivos pequeños.
+- ⚡ En general el tutorial es fácil de seguir, contiene varias partes interesantes y enseña a usar Tailwind de una manera activa y enriquecedora.
+- 💢 Usa algunas bibliotecas para crear el carousel y las animaciones por lo que no se pudo replicar esas funcionalidades, no es completamente nativo y se ve la necesidad de buscar otras opciones para comletar el tutorial.
+- 👻 Falta por implementar el carousel, las animaciones y el estado activo del menu header de la sección activa
