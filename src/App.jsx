@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Popular from "./components/Popular";
@@ -15,6 +16,7 @@ const App = () => {
         <About />
         <Popular />
         <Review />
+        <Footer />
       </main>
     </>
   );
