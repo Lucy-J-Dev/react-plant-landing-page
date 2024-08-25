@@ -47,5 +47,7 @@ export default function App() {
 
 
 ## Enseñanzas del proyecto.
-- Instalar Tailwind CSS en un proyecto generado con Vite.
-- El proyecto original usa solamente HTML, CSS y Javascript, este proyecto se modificará para usar ReactJs
+- Instalar Tailwind CSS en un proyecto generado con Vite. Se crea un mini tutorial para realizar esta tarea.
+- El proyecto original usa solamente HTML, CSS y Javascript, este proyecto se modificará para usar ReactJs.
+- Tiene manejo avanzado de Tailwind lo que permite aprender nuevas cosas
+- A traves del código se pusieron etiquetas con la palabra "interesante" para resaltar algun manejo avanzado o punto a tener en cuenta en diseños de paginas web.
