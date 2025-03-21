@@ -5,8 +5,6 @@ import Leaf1 from "../assets/img/leaf-1.png";
 import Leaf2 from "../assets/img/leaf-2.png";
 
 const Header = ({ menuLinks }) => {
-  console.log(menuLinks);
-
   const [showMenu, setShowMenu] = useState(false);
   const [modifyHeader, setModifyHeader] = useState(true);
 
@@ -30,15 +28,12 @@ const Header = ({ menuLinks }) => {
   }, []);
 
   return (
-    <header
-      id="navbar"
-      className={`bg-green-950 fixed w-full top-0 left-0 z-50 ${modifyHeaderStyle}`}
-    >
+    <header id="navbar" className={`bg-green-950 fixed w-full top-0 left-0 z-50 ${modifyHeaderStyle}`}>
       <nav className="container flex items-center justify-between h-16 sm:h-20">
         <div className="font-Lobster sm:text-2xl">IndorePlants.</div>
         <div
           id="nav-menu"
-          className={`absolute top-0 ${showMenuStyle} min-h-[80vh] w-full bg-green-950/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto`}
+          className={`absolute top-0 ${showMenuStyle} min-h-[80vh] w-full bg-green-950/80 backdrop-blur-sm flex items-center justify-center duration-700 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto`}
         >
           <ul className="flex flex-col items-center gap-8 lg:flex-row">
             {menuLinks.map((menu) => (
@@ -55,18 +50,11 @@ const Header = ({ menuLinks }) => {
           </ul>
 
           <div className="absolute bottom-0 -right-10 opacity-90 lg:hidden">
-            <img
-              src={Leaf1}
-              alt="imagen de una hoja de planta"
-              className="w-32"
-            />
+            <img src={Leaf1} alt="imagen de una hoja de planta" className="w-32" />
           </div>
+
           <div className="absolute -top-5 -left-5 rotate-90 opacity-90 lg:hidden">
-            <img
-              src={Leaf2}
-              alt="imagen de una hoja de planta"
-              className="w-32"
-            />
+            <img src={Leaf2} alt="imagen de una hoja de planta" className="w-32" />
           </div>
         </div>
         <div className="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
@@ -82,5 +70,3 @@ const Header = ({ menuLinks }) => {
 };
 
 export default Header;
-
-// TODO: Actualizar la clase active del header para saber en que seccion se encuentra

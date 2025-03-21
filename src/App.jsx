@@ -9,10 +9,10 @@ import ScrollUpButton from "./components/common/ScrollUpButton";
 
 const App = () => {
   const menuLinks = [
-    { id: 1, name: "Home", reference: 'home', active: true },
-    { id: 2, name: "About", reference: 'about', active: false },
-    { id: 3, name: "Popular", reference: 'popular', active: false },
-    { id: 4, name: "Review", reference: 'review', active: false },
+    { id: 1, name: "Home", reference: "home", active: true },
+    { id: 2, name: "About", reference: "about", active: false },
+    { id: 3, name: "Popular", reference: "popular", active: false },
+    { id: 4, name: "Review", reference: "review", active: false },
   ];
 
   return (
@@ -32,5 +32,3 @@ const App = () => {
 };
 
 export default App;
-
-// TODO: implementar animaciones y carusel con reviews

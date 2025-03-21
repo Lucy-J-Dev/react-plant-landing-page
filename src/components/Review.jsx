@@ -45,17 +45,10 @@ const Review = () => {
   return (
     <section id="review" className="relative mb-20 md:mb-28 overflow-hidden">
       <div className="absolute -top-8 -left-12 opacity-50">
-        <img
-          src={Leaf4}
-          alt="Imagen de planta"
-          className="w-40 md:w-52 xl:w-64"
-        />
+        <img src={Leaf4} alt="Imagen de planta" className="w-40 md:w-52 xl:w-64" />
       </div>
 
-      <SectionHeader
-        title={"Customer Review"}
-        description={"Follow instruction for more"}
-      />
+      <SectionHeader title={"Customer Review"} description={"Follow instruction for more"} />
 
       <div className="container">
         <div className="py-12">
@@ -63,7 +56,6 @@ const Review = () => {
             {reviews.map((review) => (
               <ReviewCard key={review.id} {...review} />
             ))}
-            {/* <div className="swiper-pagination"></div> */}
           </ul>
         </div>
       </div>
@@ -72,5 +64,3 @@ const Review = () => {
 };
 
 export default Review;
-
-// TODO: Crear un carrousel nativo y dejar de usar Swiper
